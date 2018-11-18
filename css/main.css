@@ -19,13 +19,19 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 article {
   max-width: 43em;
   padding: 0 1rem;
+  font-size: 100%;
 }
 
 article h1 {
   font-weight: normal;
+  margin-bottom: 0;
 }
 
 article header {
@@ -34,6 +40,7 @@ article header {
 
 article header p {
   font-style: italic;
+  margin-top: 0;
 }
 
 article > p:last-child {
@@ -51,10 +58,37 @@ blockquote {
   color: #999;
 }
 
-ol {
+article ol {
    padding-left: 1rem;
 }
 
 p:nth-child(8) {
   padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  article {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  blockquote {
+    margin: auto;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  article {
+    margin: 0 auto;
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  ol li {
+    margin: auto auto auto -1rem;
+  }
+
 }
