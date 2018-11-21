@@ -97,25 +97,46 @@ article ol {
     line-height: 1.4;
     font-size: 110%;
     margin: auto;
-    padding: 0 .6em;
+    padding: 0;
+  }
+
+  article header p {
+    padding: 0;
   }
 
   article p {
-    padding: .12rem .4rem .5rem;
+    padding: .12rem 0 .5rem;
+  }
+
+  article > p:first-child {
+    padding-bottom: 1.5rem;
   }
 
   blockquote {
     margin: auto;
-    max-width: 25em;
-    padding: 0;
+    max-width: 24em;
+    padding: 0 0 .5rem;
   }
 
   blockquote p {
     margin: 0;
+    padding-top: 0;
+  }
+
+  article > p:nth-child(3) {
+    padding-bottom: 0;
+  }
+
+  article > p:nth-child(5) {
+    padding-bottom: .4rem;
+  }
+
+  ol {
+    margin-top: 0;
   }
 
   ol li {
-    margin-left: -.5em;
+    margin: 0;
   }
 
 }
@@ -127,11 +148,16 @@ article ol {
     font-size: 120%;
     margin: 1rem auto;
     max-width: 43em;
-    padding: 0 .6em;
+    padding: 0;
+  }
+
+  article {
+    margin: 0;
+    padding: .2rem;
   }
 
   article h1 {
-    padding: .1rem;
+    padding: .5rem 0 0;
   }
 
   ol li {
